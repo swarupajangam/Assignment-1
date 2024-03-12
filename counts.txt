@@ -1,0 +1,24 @@
+public class CountVowelConsonant {    
+    public static void main(String[] args) {    
+        int v = 0, c = 0;    
+        String str = " Java FullStack Developer";
+        str = str.toLowerCase();    
+            
+        for(int i = 0; i < str.length(); i++) {    
+            if(str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u') {    
+                v++;    
+            }    
+            else if(str.charAt(i) >= 'a' && str.charAt(i)<='z') {      
+                c++;    
+            }    
+        }    
+        System.out.println("Number of vowels: " + v);    
+        System.out.println("Number of consonants: " + c);    
+    }    
+}   
+
+
+output:
+
+Number of vowels: 8
+Number of consonants: 14
